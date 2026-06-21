@@ -14,12 +14,18 @@ confidence: high
 두 함수 [[function]] `f: A→B`, `g: B→C`가 주어졌을 때, **합성** `g∘f: A→C`는
 `f`를 먼저, `g`를 나중에 적용:
 
-$$ (g \circ f)(x) = g(f(x)) $$
+$$
+(g \circ f)(x) = g(f(x))
+$$
 
-$$ A \xrightarrow{\ f\ } B \xrightarrow{\ g\ } C, \qquad x \mapsto f(x) \mapsto g(f(x)) $$
+$$
+A \xrightarrow{\ f\ } B \xrightarrow{\ g\ } C, \qquad x \mapsto f(x) \mapsto g(f(x))
+$$
 
 집합으로 보면 ([[cartesian-product]]의 부분집합):
-$$ S_{g \circ f} = \{ (x,\, g(f(x))) \mid x \in A \} \subseteq A \times C $$
+$$
+S_{g \circ f} = \{ (x,\, g(f(x))) \mid x \in A \} \subseteq A \times C
+$$
 
 > ⚠️ 합성 가능 조건: `f`의 **공역**과 `g`의 **정의역**이 맞아야 한다(`f`의 도착=`g`의 출발=B).
 > 순서가 중요: `g∘f`는 "f 먼저". 일반적으로 `g∘f ≠ f∘g`.

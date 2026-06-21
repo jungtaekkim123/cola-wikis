@@ -13,7 +13,9 @@ confidence: high
 ## 정의
 두 집합 `A, B`에 대해, **관계(relation)** `R`은 [[cartesian-product]] `A×B`의 **부분집합**이다:
 
-$$ R \subseteq A \times B $$
+$$
+R \subseteq A \times B
+$$
 
 `(a,b) ∈ R`이면 "`a`가 `b`와 관계 맺음"이라 하고 $a \sim_R b$로 적는다.
 

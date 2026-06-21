@@ -15,19 +15,25 @@ confidence: high
 ## 단사 (1-1, Injective)
 서로 다른 입력은 서로 다른 출력으로 간다 — **겹쳐 들어오지 않음**.
 
-$$ f(x_1) = f(x_2) \implies x_1 = x_2 \qquad(\text{대우: } x_1 \neq x_2 \implies f(x_1) \neq f(x_2)) $$
+$$
+f(x_1) = f(x_2) \implies x_1 = x_2 \qquad(\text{대우: } x_1 \neq x_2 \implies f(x_1) \neq f(x_2))
+$$
 
 ## 전사 (Onto, Surjective)
 공역 `B`의 모든 원소가 **누군가의 상**이다 — **빠짐없이 덮음**.
 
-$$ \operatorname{Im} f = f(A) = B \qquad\Longleftrightarrow\qquad \forall y \in B,\ \exists a \in A \text{ s.t. } f(a) = y $$
+$$
+\operatorname{Im} f = f(A) = B \qquad\Longleftrightarrow\qquad \forall y \in B,\ \exists a \in A \text{ s.t. } f(a) = y
+$$
 
 (치역=공역. → [[image-of-set]], [[function]])
 
 ## 전단사 (Bijective)
 **단사 + 전사**. 입력과 출력이 완벽히 1:1로 짝지어진다.
 
-$$ \text{bijective} \iff \text{1-1 and onto} $$
+$$
+\text{bijective} \iff \text{1-1 and onto}
+$$
 
 전단사일 때만 [[inverse-function]] `f⁻¹: B→A`를 정의할 수 있다.
 

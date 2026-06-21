@@ -20,7 +20,9 @@ confidence: high
 ## Proof 1) 단사 ⟺ 좌역함수
 **(⟹) 단사라고 가정.** 아무 `p∈A`를 하나 고정하고 `g: B→A`를 이렇게 정의:
 
-$$ g(b) = \begin{cases} a & \text{if } b \in \operatorname{Im} f \ (b = f(a)) \\ p & \text{if } b \notin \operatorname{Im} f \end{cases} $$
+$$
+g(b) = \begin{cases} a & \text{if } b \in \operatorname{Im} f \ (b = f(a)) \\ p & \text{if } b \notin \operatorname{Im} f \end{cases}
+$$
 
 - **well-defined**인 이유: `b=f(a)=f(a')`이면 `f`가 단사이므로 `a=a'`. 즉 `g(b)`가 유일하게 정해짐.
   (단사가 바로 여기서 필요 — 안 그러면 `g(b)`를 무엇으로 할지 모호.)
@@ -28,7 +30,11 @@ $$ g(b) = \begin{cases} a & \text{if } b \in \operatorname{Im} f \ (b = f(a)) \\
 
 > [!example]- (⟸) 좌역함수 ⟹ 단사 — 풀이 (펼쳐보기)
 > `g∘f = id_A`인 `g`가 있다고 하자. $f(x_1)=f(x_2)$이면 양변에 `g`를 적용:
-> $$ x_1 = g(f(x_1)) = g(f(x_2)) = x_2. $$
+>
+> $$
+> x_1 = g(f(x_1)) = g(f(x_2)) = x_2.
+> $$
+>
 > 따라서 `f`는 단사. $\blacksquare$ (좌역함수의 존재가 "되돌릴 수 있음"=단사를 강제)
 
 ## Proof 2) 전사 ⟺ 우역함수 — ⭐ 선택공리가 숨은 곳
@@ -37,7 +43,11 @@ $$ g(b) = \begin{cases} a & \text{if } b \in \operatorname{Im} f \ (b = f(a)) \\
 
 > [!example]- (⟸) 우역함수 ⟹ 전사 — 풀이 (펼쳐보기)
 > `f∘g = id_B`인 `g`가 있다고 하자. 임의의 `y∈B`에 대해
-> $$ f(g(y)) = (f\circ g)(y) = \mathrm{id}_B(y) = y, $$
+>
+> $$
+> f(g(y)) = (f\circ g)(y) = \mathrm{id}_B(y) = y,
+> $$
+>
 > 즉 `y`는 `g(y)∈A`의 상이다. 따라서 모든 `y∈B`가 상에 있으므로 `f`는 전사. $\blacksquare$
 > (이 방향은 **선택공리 불필요** — `g`가 이미 주어졌으니 고를 게 없다.)
 

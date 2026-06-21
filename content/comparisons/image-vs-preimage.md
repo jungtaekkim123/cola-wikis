@@ -39,12 +39,20 @@ confidence: high
 상과 역상을 연달아 적용하면 제자리로 안 돌아오고 **한쪽으로만 포함**된다.
 
 > [!example]- ① $f(f^{-1}(B_1)) \subseteq B_1$ — 증명 + 반례 (펼쳐보기)
-> $$ y\in f(f^{-1}(B_1)) \implies \exists x\in f^{-1}(B_1),\ f(x)=y \implies f(x)\in B_1 \ \text{and}\ f(x)=y \implies y\in B_1. \quad\blacksquare $$
+>
+> $$
+> y\in f(f^{-1}(B_1)) \implies \exists x\in f^{-1}(B_1),\ f(x)=y \implies f(x)\in B_1 \ \text{and}\ f(x)=y \implies y\in B_1. \quad\blacksquare
+> $$
+>
 > **등호 조건**: $B_1\subseteq \operatorname{Im}f$ (특히 `f`가 [[injective-surjective-bijective|전사]]면 항상 등호).
 > **반례**: $f:\{1\}\to\{a,b\},\ f(1)=a$ (비전사). $B_1=\{b\}$ → $f^{-1}(\{b\})=\varnothing$ → $f(\varnothing)=\varnothing \subsetneq \{b\}$.
 
 > [!example]- ② $f^{-1}(f(A_1)) \supseteq A_1$ — 증명 + 반례 (펼쳐보기)
-> $$ x\in A_1 \implies f(x)\in f(A_1) \implies x\in f^{-1}(f(A_1)). \quad\blacksquare $$
+>
+> $$
+> x\in A_1 \implies f(x)\in f(A_1) \implies x\in f^{-1}(f(A_1)). \quad\blacksquare
+> $$
+>
 > **등호 조건**: `f`가 [[injective-surjective-bijective|단사]].
 > **반례**: $f:\{1,2\}\to\{0\},\ f(1)=f(2)=0$ (비단사). $A_1=\{1\}$ → $f(A_1)=\{0\}$ → $f^{-1}(\{0\})=\{1,2\}\supsetneq\{1\}$.
 

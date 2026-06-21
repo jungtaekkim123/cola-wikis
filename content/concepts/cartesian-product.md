@@ -13,7 +13,9 @@ confidence: high
 ## 정의
 두 집합 `A, B`에 대해 **곱집합** `A×B`는 **순서쌍(ordered pair) `(a,b)`들의 집합**:
 
-$$ A \times B = \{ (a, b) \mid a \in A,\ b \in B \} $$
+$$
+A \times B = \{ (a, b) \mid a \in A,\ b \in B \}
+$$
 
 - `a`는 `A`에서, `b`는 `B`에서 뽑은 원소. 첫째·둘째 자리의 **순서가 의미를 가진다**
   ((a,b) ≠ (b,a) 일반적으로).

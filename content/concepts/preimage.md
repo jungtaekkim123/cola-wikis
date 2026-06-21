@@ -14,7 +14,9 @@ confidence: high
 함수 [[function]] `f: A→B`와 부분집합 `B₁ ⊆ B`에 대해, **역상(inverse image)** 은
 "`f`로 보냈을 때 `B₁` 안에 떨어지는" 정의역 원소들의 집합:
 
-$$ f^{-1}(B_1) := \{ x \in A \mid f(x) \in B_1 \} \subseteq A $$
+$$
+f^{-1}(B_1) := \{ x \in A \mid f(x) \in B_1 \} \subseteq A
+$$
 
 - 노트 표현: "B₁의 역상". `f`가 역함수를 가질 필요는 **없다** — `f⁻¹(B₁)`은 단지 기호이고,
   항상 잘 정의된다(역함수와 무관).
@@ -22,9 +24,15 @@ $$ f^{-1}(B_1) := \{ x \in A \mid f(x) \in B_1 \} \subseteq A $$
 ## Proposition 2 (역상과 집합 연산) — Proof Exercise
 `B₁, B₂ ⊆ B`일 때 **세 연산 모두 등호**:
 
-$$ f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2) $$
-$$ f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2) $$
-$$ f^{-1}(B_1^{\,c}) = \big(f^{-1}(B_1)\big)^{c} $$
+$$
+f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)
+$$
+$$
+f^{-1}(B_1 \cap B_2) = f^{-1}(B_1) \cap f^{-1}(B_2)
+$$
+$$
+f^{-1}(B_1^{\,c}) = \big(f^{-1}(B_1)\big)^{c}
+$$
 
 > ✅ **상([[image-of-set]])과 달리 ∩·여집합에서도 등호가 성립**한다. 이유: 역상은
 > "원소 `x`에 대한 조건 `f(x)∈B₁`"으로 정의되므로, 불리언 연산(or/and/not = ∪/∩/ᶜ)이
@@ -35,16 +43,34 @@ $$ f^{-1}(B_1^{\,c}) = \big(f^{-1}(B_1)\big)^{c} $$
 [[image-of-set|상]]과 달리 $\exists$가 없어 `and`/`not`에서도 깨지지 않는 게 핵심.
 
 > [!example]- (a) 합집합 $f^{-1}(B_1\cup B_2)=f^{-1}(B_1)\cup f^{-1}(B_2)$ (펼쳐보기)
-> $$ x\in f^{-1}(B_1\cup B_2) \iff f(x)\in B_1\cup B_2 \iff f(x)\in B_1 \ \text{or}\ f(x)\in B_2 $$
-> $$ \iff x\in f^{-1}(B_1)\ \text{or}\ x\in f^{-1}(B_2) \iff x\in f^{-1}(B_1)\cup f^{-1}(B_2). \qquad\blacksquare $$
+>
+> $$
+> x\in f^{-1}(B_1\cup B_2) \iff f(x)\in B_1\cup B_2 \iff f(x)\in B_1 \ \text{or}\ f(x)\in B_2
+> $$
+>
+> $$
+> \iff x\in f^{-1}(B_1)\ \text{or}\ x\in f^{-1}(B_2) \iff x\in f^{-1}(B_1)\cup f^{-1}(B_2). \qquad\blacksquare
+> $$
 
 > [!example]- (b) 교집합 $f^{-1}(B_1\cap B_2)=f^{-1}(B_1)\cap f^{-1}(B_2)$ (펼쳐보기)
-> $$ x\in f^{-1}(B_1\cap B_2) \iff f(x)\in B_1 \ \text{and}\ f(x)\in B_2 $$
-> $$ \iff x\in f^{-1}(B_1)\ \text{and}\ x\in f^{-1}(B_2) \iff x\in f^{-1}(B_1)\cap f^{-1}(B_2). \qquad\blacksquare $$
+>
+> $$
+> x\in f^{-1}(B_1\cap B_2) \iff f(x)\in B_1 \ \text{and}\ f(x)\in B_2
+> $$
+>
+> $$
+> \iff x\in f^{-1}(B_1)\ \text{and}\ x\in f^{-1}(B_2) \iff x\in f^{-1}(B_1)\cap f^{-1}(B_2). \qquad\blacksquare
+> $$
 
 > [!example]- (c) 여집합 $f^{-1}(B_1^{\,c})=(f^{-1}(B_1))^{c}$ (펼쳐보기)
-> $$ x\in f^{-1}(B_1^{\,c}) \iff f(x)\in B_1^{\,c} \iff f(x)\notin B_1 $$
-> $$ \iff x\notin f^{-1}(B_1) \iff x\in (f^{-1}(B_1))^{c}. \qquad\blacksquare $$
+>
+> $$
+> x\in f^{-1}(B_1^{\,c}) \iff f(x)\in B_1^{\,c} \iff f(x)\notin B_1
+> $$
+>
+> $$
+> \iff x\notin f^{-1}(B_1) \iff x\in (f^{-1}(B_1))^{c}. \qquad\blacksquare
+> $$
 
 ## 관련
 - 함수의 정의 → [[function]]

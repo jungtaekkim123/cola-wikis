@@ -28,10 +28,14 @@ confidence: high
 ## 집합의 상등 (A = B)
 두 집합이 같다는 것은 **서로가 서로의 부분집합**이라는 뜻:
 
-$$ A = B \iff A \subseteq B \text{ and } B \subseteq A $$
+$$
+A = B \iff A \subseteq B \text{ and } B \subseteq A
+$$
 
 원소 수준으로 풀면:
-$$ A = B \iff (x \in A \Rightarrow x \in B) \text{ and } (y \in B \Rightarrow y \in A) $$
+$$
+A = B \iff (x \in A \Rightarrow x \in B) \text{ and } (y \in B \Rightarrow y \in A)
+$$
 
 이 **"양쪽 포함을 각각 보인다"**는 전략이 집합 등식 증명의 표준 틀이다 → [[set-identities]]에서 실제로 사용.
 

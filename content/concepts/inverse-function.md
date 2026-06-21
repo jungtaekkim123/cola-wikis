@@ -14,7 +14,9 @@ confidence: high
 `f: A→B`가 **전단사(bijective)** ([[injective-surjective-bijective]])이면, 역함수
 `f⁻¹: B→A`를 정의할 수 있다:
 
-$$ f^{-1}(b) = a \quad\text{where } f(a) = b $$
+$$
+f^{-1}(b) = a \quad\text{where } f(a) = b
+$$
 
 - 잘 정의되는 이유: **전사**라서 각 `b`에 대응되는 `a`가 **존재**하고,
   **단사**라서 그 `a`가 **유일**하다. 둘 다 있어야 역함수가 함수가 된다.

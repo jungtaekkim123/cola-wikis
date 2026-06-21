@@ -14,7 +14,9 @@ confidence: high
 집합 `X` 위의 [[equivalence-relation|동치관계]] `∼_R`가 있을 때, `x∈X`의 **동치류**는
 `x`와 관계 맺는 모든 원소의 집합:
 
-$$ [x] = \{ y \in X \mid x \sim_R y \} $$
+$$
+[x] = \{ y \in X \mid x \sim_R y \}
+$$
 
 "`x`의 동치류". (예: [[partition|ℤ mod 3]]의 `[0],[1],[2]`가 각각 0,1,2의 동치류.)
 

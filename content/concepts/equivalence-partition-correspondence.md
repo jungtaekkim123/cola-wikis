@@ -19,7 +19,9 @@ confidence: high
 
 ## 방향 ②: 분할 → 동치관계 (Exercise 풀이)
 분할 $\mathcal{F}=\{E_i \mid i\in I\}$ 가 주어지면, **같은 조각에 있으면 관계**라고 정의:
-$$ x \sim_R y \iff \exists i\in I \text{ s.t. } x,y\in E_i $$
+$$
+x \sim_R y \iff \exists i\in I \text{ s.t. } x,y\in E_i
+$$
 이 `∼_R`이 동치관계임을 보인다.
 
 > [!example]- 반사·대칭·추이 증명 (펼쳐보기)
@@ -30,8 +32,12 @@ $$ x \sim_R y \iff \exists i\in I \text{ s.t. } x,y\in E_i $$
 > 👉 추이성이 분할의 "서로소"에서 곧장 나온다 — 두 구조가 같은 정보임을 보여주는 핵심 고리.
 
 ## 방향 ③: 1:1 대응 (두 방향은 서로 역)
-$$ \{\,X \text{ 위 동치관계}\,\} \;\longleftrightarrow\; \{\,X \text{ 의 분할}\,\} $$
-$$ \sim_R \;\longmapsto\; \{[x]_R \mid x\in X\}, \qquad P \;\longmapsto\; \sim_{R(P)} $$
+$$
+\{\,X \text{ 위 동치관계}\,\} \;\longleftrightarrow\; \{\,X \text{ 의 분할}\,\}
+$$
+$$
+\sim_R \;\longmapsto\; \{[x]_R \mid x\in X\}, \qquad P \;\longmapsto\; \sim_{R(P)}
+$$
 
 > [!example]- 왜 서로 역인가 (펼쳐보기)
 > - 동치관계 $\sim_R$ → 분할 $\{[x]\}$ → 다시 관계: "같은 동치류에 속함". 그런데 $x,y$가 같은 동치류에

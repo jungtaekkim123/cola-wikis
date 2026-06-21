@@ -18,7 +18,9 @@ confidence: high
 두 집합 `A, B`에 대해, `f: A → B`가 **함수**라는 것은 다음 조건을 만족하는
 부분집합 `S_f ⊆ A × B`가 존재한다는 뜻이다:
 
-$$ \forall a \in A,\ \exists!\, b \in B \ \text{such that}\ (a, b) \in S_f $$
+$$
+\forall a \in A,\ \exists!\, b \in B \ \text{such that}\ (a, b) \in S_f
+$$
 
 즉 **정의역 `A`의 각 원소 `a`마다, `(a,b) ∈ S_f`인 `b`가 정확히 하나(`∃!`, 유일하게)** 존재한다.
 이때 그 유일한 `b`를 `f(a)`로 적는다: `b = f(a)`.
@@ -33,7 +35,9 @@ $$ \forall a \in A,\ \exists!\, b \in B \ \text{such that}\ (a, b) \in S_f $$
 | 공역 (codomain) | `B` | 출력이 담길 수 있는 집합 |
 | 치역 (range / image) | `Im f` | **실제로** 대응된 출력들의 모임 |
 
-$$ \operatorname{Im} f = \{ b = f(a) \mid a \in A \} \subseteq B $$
+$$
+\operatorname{Im} f = \{ b = f(a) \mid a \in A \} \subseteq B
+$$
 
 - 치역은 항상 공역의 **부분집합**이며, 같을 수도(전사) 아닐 수도 있다.
 - 사용자 메모: "실제로 대응시켜준 원소들을 치역이라고 부른다" — 즉 `B` 전체가 아니라 *닿은* 부분.

@@ -20,14 +20,18 @@ $\mathcal{F}=\{E_i \mid i\in I\}$ 가 **분할(partition)** 이라는 것은 세
 | ② 서로소 (disjoint) | $\alpha \neq \beta \Rightarrow E_\alpha \cap E_\beta = \varnothing$ | 조각끼리 안 겹침 |
 | ③ 덮음 (cover) | $\bigcup_{i\in I} E_i = E$ | 빠짐없이 다 덮음 |
 
-$$ \bigcup_{i\in I} E_i = \{ x \in E \mid \exists i\in I,\ x \in E_i \} $$
+$$
+\bigcup_{i\in I} E_i = \{ x \in E \mid \exists i\in I,\ x \in E_i \}
+$$
 
 > 한마디로: **`E`를 겹침 없이·빠짐없이 조각낸 것**. 각 원소는 정확히 한 조각에 속한다.
 
 ## 예시 — ℤ를 3으로 나눈 나머지
 정수 [[number-sets|ℤ]]에서 $[k] = \{ x\in\mathbb{Z} \mid x = 3a+k,\ a\in\mathbb{Z} \}$ (3으로 나눈 나머지가 `k`):
 
-$$ [0]\cap[1] = [1]\cap[2] = [2]\cap[0] = \varnothing, \qquad [0]\cup[1]\cup[2] = \mathbb{Z} $$
+$$
+[0]\cap[1] = [1]\cap[2] = [2]\cap[0] = \varnothing, \qquad [0]\cup[1]\cup[2] = \mathbb{Z}
+$$
 
 따라서 $\mathcal{F}=\{[0],[1],[2]\}$ 는 ℤ의 분할. (이 `[k]`가 바로 동치류 → [[equivalence-class]])
 
